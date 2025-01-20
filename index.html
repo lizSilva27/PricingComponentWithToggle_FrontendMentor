@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./main.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  </head>
+  <body>
+    <main class="mainContainer">
+      
+      <div class="mainContainer__bgImageTop">
+        <img src="./images/bg-top.svg" alt="Image Background Top" />
+      </div>
+
+      <h1>Our Pricing</h1>
+
+      <div class="mainContainer__toogle">
+        <span class="mainContainer__toogle__text annually">Annually</span>
+        <input type="checkbox" name="btnCheckbook" id="btnCheckbook" class="mainContainer__toogle__checkbox" />
+        <label for="btnCheckbook" class="mainContainer__toogle__label"></label>
+        <span class="mainContainer__toogle__text monthly">Monthly</span>
+      </div>
+      
+      <!-- <div class="mainContainer__toogle">
+        <input type="checkbox" name="btnCheckbook" id="btnCheckbook" class="mainContainer__toogle__checkbox" />
+        <label for="btnCheckbook" class="mainContainer__toogle__label"></label>
+      </div> -->
+
+      <div class="mainContainer__containerPlans">
+
+        <div class="mainContainer__basicPlan">
+          <span class="mainContainer__basicPlan__namePlan">Basic</span>
+          <!-- <span>&dollar;19.99</span> -->
+          <p class="mainContainer__basicPlan__txtPricePlan" id="pricePlan"><span>&dollar;</span>199.99</p> <!-- Anually -->
+          <!-- <p class="mainContainer__basicPlan__txtPricePlan">&dollar;19.99</p>  -->
+          <div class="mainContainer__basicPlan__containerDescriptionPlan">
+            <p>500 GB Storage</p>
+            <p>2 Users Allowed</p>
+            <p>Send up to 3 GB</p>
+          </div>
+          <button type="button" class="mainContainer__basicPlan__btnLearnMore">Learn More</button>
+        </div>
+
+        <div class="mainContainer__professionalPlan">
+          <span class="mainContainer__professionalPlan__namePlan">Professional</span>
+          <!-- &dollar;24.99 -->
+          <p class="mainContainer__professionalPlan__txtPricePlan" id="pricePlan"><span>&dollar;</span>249.99</p> <!-- Anually -->
+          <!-- <p class="mainContainer__professionalPlan__txtPricePlan">&dollar;24.99</p> -->
+          <div class="mainContainer__professionalPlan__containerDescriptionPlan">
+            <p>1 TB Storage</p>
+            <p>5 Users Allowed</p>
+            <p>Send up to 10 GB</p>
+          </div>
+          <button class="mainContainer__professionalPlan__btnLearnMoreProfessional">Learn More</button>
+        </div>
+
+        <div class="mainContainer__masterPlan">
+          <span class="mainContainer__masterPlan__namePlan">Master</span>
+          <!-- &dollar;39.99 -->
+          <p class="mainContainer__masterPlan__txtPricePlan" id="pricePlan"><span>&dollar;</span>399.99</p> <!-- Anually -->
+          <!-- <p class="mainContainer__masterPlan__txtPricePlan">&dollar;39.99</p> -->
+          <div class="mainContainer__masterPlan__containerDescriptionPlan">
+            <p>2 TB Storage</p>
+            <p>10 Users Allowed</p>
+            <p>Send up to 20 GB</p>
+          </div>
+          <button class="mainContainer__masterPlan__btnLearnMore">Learn More</button>
+        </div>
+
+      </div>
+
+      <div class="mainContainer__bgImageBottom">
+        <img src="./images/bg-bottom.svg" alt="" />
+      </div>
+
+    </main>
+
+    <script src="./script/index.js"></script>
+  </body>
+</html>

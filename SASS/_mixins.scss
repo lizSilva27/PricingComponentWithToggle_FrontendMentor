@@ -1,0 +1,80 @@
+@use 'variables';
+
+@mixin styleCards($anguloGradient, $colorsGradient...) {
+  background:linear-gradient($anguloGradient, $colorsGradient...);
+  border-radius: 6px;
+  padding: 35px 30px;
+  text-align: center;
+  width: 350px;
+  max-width: 400px;
+}
+
+@mixin namePlan($txtColor) {
+  font-weight: 700;
+  color: $txtColor;
+}
+
+@mixin pricePlan($txtColorPrice) {
+  font-weight: 700;
+  color: $txtColorPrice;
+  font-size: 40px;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+@mixin containerDescriptionPlan($colorLine) {
+  border-top: 1px solid $colorLine;
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@mixin descripcionTxt($colorLine, $txtColor) {
+  border-bottom: 1px solid $colorLine;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: $txtColor;
+}
+
+@mixin btnLearnMore($colorTxtBtn, $anguloGradient, $colorsGradient...) {
+  position: relative;
+  width: 100%;
+  padding: 18px 0;
+  margin-top: 30px;
+  border-radius: 7px;
+  color: $colorTxtBtn;
+  background: linear-gradient($anguloGradient, $colorsGradient...);
+  font-weight: 600;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    transition: left 0.8s ease;
+  }
+
+  &:hover::after {
+    left: 0;
+  }
+
+  /* Regreso al estado inicial */
+  &:not(:hover)::after {
+    left: -100%;
+    /* Se oculta nuevamente hacia el lado izquierdo */
+  }
+}
