@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://your-solution-url.com]
+- Solution URL: [https://pricing-toggle-ftm.netlify.app/]
 - Live Site URL: [https://github.com/lizSilva27/PricingComponentWithToggle_FrontendMentor]
 
 ## My process
