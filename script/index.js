@@ -19,15 +19,6 @@ const prices = {
   },
 };
 
-// const priceOnBasic = "$19.99";
-// const priceOffBasic = "$199.99";
-
-// const priceOnProfessional = "$24.99";
-// const priceOffProfessional = "$249.99";
-
-// const priceOnMaster = "$39.99";
-// const priceOffMaster = "$399.99";
-
 toogle.addEventListener('change', (event) => {
 
   const state = event.target.checked ? 'on' : 'off';
@@ -42,15 +33,4 @@ toogle.addEventListener('change', (event) => {
     annuallyText.style.color = '#000';
     monthlyText.style.color = "#ccc";
   }
-  // if (event.target.checked) {
-  //   pricePlanDinamicBasic.textContent = priceOnBasic;
-  //   pricePlanDinamicProfessional.textContent = priceOnProfessional;
-  //   pricePlanDinamicMaster.textContent = priceOnMaster ;
-  //   // console.log('Switch activado');
-  // } else {
-  //   pricePlanDinamicBasic.textContent = priceOffBasic;
-  //   pricePlanDinamicProfessional.textContent = priceOffProfessional;
-  //   pricePlanDinamicMaster.textContent = priceOffMaster ;
-  //   // console.log('Switch desactivado');
-  // }
 });
